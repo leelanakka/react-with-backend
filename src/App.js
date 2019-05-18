@@ -1,6 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { domainToUnicode } from "url";
+import LoginForm from "./LoginForm";
 
 class App extends React.Component {
   constructor(props) {
@@ -19,15 +18,9 @@ class App extends React.Component {
   }
   render() {
     return (
-      <form>
-        Name:
-        <input id="name" type="text" name="name" />
-        <input
-          type="submit"
-          value="Submit"
-          onClick={this.transfer.bind(this)}
-        />
-      </form>
+      <div >
+        <LoginForm props=" " />
+      </div>
     );
   }
 }
